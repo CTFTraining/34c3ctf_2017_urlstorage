@@ -1,0 +1,11 @@
+#!/bin/sh
+
+service mysql start
+
+service nginx start
+
+cd /app && gunicorn urlstorage.wsgi --bind 127.0.0.1:8000 &
+
+/xss/run_bot.sh
+
+/bin/bash -i

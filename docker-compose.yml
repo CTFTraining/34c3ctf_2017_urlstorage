@@ -1,0 +1,12 @@
+# 34c3ctf 2017 urlstorage
+version: "2"
+
+services:
+
+  web:
+    image: ctftraining/34c3ctf_2017_urlstorage
+    restart: always
+    env:
+      - DOMAIN=34c3ctf2017.local.virzz.com
+    ports:
+      - "127.0.0.1:80:80"
