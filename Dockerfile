@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.10
 
 ENV DOCKER=1 PHANTOMJS_VERSION="2.1.1"
 
