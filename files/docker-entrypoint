@@ -1,5 +1,10 @@
 #!/bin/sh
 
+sed -i "s/34C3_d163c315ddc5458d329d6f4a617ce6d5358145cb/$FLAG/" /app/urlstorage/templates/flag.html
+
+export FLAG=not_flag
+FLAG=not_flag
+
 service mysql start
 
 service nginx start
