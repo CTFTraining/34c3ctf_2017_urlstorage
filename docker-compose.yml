@@ -4,9 +4,11 @@ version: "2"
 services:
 
   web:
+    build: .
     image: ctftraining/34c3ctf_2017_urlstorage
     restart: always
-    env:
+    environment:
       - DOMAIN=34c3ctf2017.local.virzz.com
+      - FLAG=flag{flag_test}
     ports:
       - "127.0.0.1:80:80"
